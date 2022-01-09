@@ -7,7 +7,6 @@
 %undefine	with_ocaml_opt
 %endif
 
-%define		module	re
 Summary:	Regular expression library for OCaml
 Summary(pl.UTF-8):	Biblioteka wyrażeń regularnych dla OCamla
 Name:		ocaml-re
@@ -19,7 +18,6 @@ Group:		Libraries
 Source0:	https://github.com/ocaml/ocaml-re/releases/download/%{version}/re-%{version}.tbz
 # Source0-md5:	a36347dcfaf71c95916f96f72b0cf2ce
 URL:		https://github.com/ocaml/ocaml-re
-#BuildRequires:	-devel
 BuildRequires:	ocaml >= 1:4.02
 BuildRequires:	ocaml-dune >= 2.0
 BuildRequires:	ocaml-seq-devel
@@ -42,7 +40,7 @@ używających biblioteki re.
 
 %package devel
 Summary:	Regular expression library for OCaml - development part
-Summary(pl.UTF-8):	Biblioteka wyrażeń regularnych dla OCamla - cześć programistyczna
+Summary(pl.UTF-8):	Biblioteka wyrażeń regularnych dla OCamla - część programistyczna
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	ocaml-seq-devel
